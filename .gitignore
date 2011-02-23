@@ -1,0 +1,14 @@
+.classpath
+.project
+.DS_Store
+.settings/
+.idea/
+out/
+intellij/
+build/
+*.log
+*.iml
+*.ipr
+*.iws
+.gradle/
+gradle.properties
