@@ -1,3 +1,5 @@
+package org.springframework.gradle.tasks
+
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.*;
 import org.gradle.api.tasks.bundling.Tar;
