@@ -33,6 +33,17 @@ dependencies {
             'net.sf.docbook:docbook-xsl:1.75.2:ns-resources@zip'
 }
 
+
+uploadArchives {
+    repositories {
+        add(new org.apache.ivy.plugins.resolver.FileSystemResolver()) {
+            name = "local"
+            addIvyPattern "$buildDir/repo/[organisation].[module]-ivy-[revision].xml"
+            addArtifactPattern "$buildDir/repo/[organisation].[module]-[revision](-[classifier]).[ext]"
+        }
+    }
+}
+
 // GAE
 dependencies {
     compile 'com.google.appengine:appengine-tools-sdk:1.4.2'
