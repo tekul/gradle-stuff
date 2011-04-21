@@ -77,7 +77,7 @@ class S3DistroUpload extends DefaultTask {
         shaDest.setContentLength(shaFile.length())
 
         logger.info("Uploading SHA checksum " + shaFile.getName() + " to " + key + '.sha1' + "...")
-        s3.putObject(bucket, archiveDest);
+        s3.putObject(bucket, shaDest);
         logger.info("Done")
     }
 
